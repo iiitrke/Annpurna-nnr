@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        app:srcCompat="@drawable/uklogo" />
+
+    <TextView
+        android:id="@+id/companyName"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="1dp"
+        android:background="#031BB6"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/company_name"
+        android:textAlignment="center"
+        android:textColor="#FBFAFA"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This app has been developed  by NNR, ULB, Govt of Uttarakhand to fight against COVID-19 pendemic. Main purpose of this app is to maintain social distancing during the lockdown period." />
+
+    <TextView
+        android:id="@+id/scope"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="#0725E1"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/scope"
+        android:textAlignment="center"
+        android:textColor="#F6F9FA"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="#1736FA"
+        android:text="Nagar Nigam Roorkee area is divided into 6 zones during Covid19 lockdown. People can get home delivery of their daily need items by calling nearby shopkeepers."
+        android:textAlignment="center"
+        android:textColor="#F2F4F4"
+        android:textSize="12sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/clickmessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="#E9F10E"
+        android:text="Please click list item to get shopkeepr details"
+        android:textAlignment="center"
+        android:textColor="#023343"
+        android:textSize="12sp"
+        android:textStyle="normal|bold" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#1ec2d4"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="Mohalla Name"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Zone Name"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp">
+
+        </ListView>
+    </LinearLayout>
+
+
+
+</LinearLayout>
